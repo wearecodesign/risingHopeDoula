@@ -1,0 +1,40 @@
+{
+  "testimonials": [
+    {
+      "quote": "Having our doula by our side was the best decision we made for our birth. She helped us navigate unexpected changes with grace and made sure our voices were heard. We felt supported every step of the way.",
+      "author": "Sarah & Michael",
+      "context": "First-time parents, hospital birth",
+      "category": "Birth Support"
+    },
+    {
+      "quote": "I was nervous about giving birth, especially as a first-time mom. Our doula's calm presence and constant encouragement gave me the confidence I needed. She helped my partner know exactly how to support me.",
+      "author": "Jennifer",
+      "context": "Unmedicated birth",
+      "category": "Birth Support"
+    },
+    {
+      "quote": "After a difficult first birth experience, I was anxious about my second. Our doula helped me process my fears and create a birth plan that honored my needs. This time, I felt empowered and in control.",
+      "author": "Maria",
+      "context": "VBAC birth",
+      "category": "Birth Support"
+    },
+    {
+      "quote": "The postpartum period was harder than I expected. Having someone come in who actually understood what I was going through was invaluable. She helped me rest, fed my toddler, and reminded me that it's okay to ask for help.",
+      "author": "Amanda",
+      "context": "Second-time mom, postpartum support",
+      "category": "Postpartum Care"
+    },
+    {
+      "quote": "Overnight postpartum support saved my sanity. Knowing someone was there to care for the baby so I could sleep was life-changing. I woke up feeling human again.",
+      "author": "David & Lisa",
+      "context": "Twins, overnight care",
+      "category": "Postpartum Care"
+    },
+    {
+      "quote": "The childbirth education sessions were exactly what we needed. Everything was explained clearly, and we felt so much more prepared walking into the hospital. I actually looked forward to labor!",
+      "author": "Nicole & James",
+      "context": "First-time parents",
+      "category": "Prenatal Education"
+    }
+  ]
+}

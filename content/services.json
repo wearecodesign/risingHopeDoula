@@ -1,0 +1,52 @@
+{
+  "services": [
+    {
+      "name": "Birth Doula Support",
+      "description": "Continuous emotional, physical, and informational support during labor and delivery. Includes prenatal visits to discuss your birth preferences, on-call availability, and immediate postpartum support.",
+      "includes": [
+        "Two prenatal visits",
+        "24/7 on-call support from 38 weeks",
+        "Continuous labor and birth support",
+        "Comfort measures and positioning guidance",
+        "Partner support and involvement",
+        "One postpartum visit"
+      ]
+    },
+    {
+      "name": "Postpartum Doula Care",
+      "description": "Nurturing support during the fourth trimester as you adjust to life with your new baby. Whether you need daytime help or overnight support, I provide evidence-based care for the whole family.",
+      "includes": [
+        "Newborn care education",
+        "Infant feeding support",
+        "Light household tasks",
+        "Meal preparation",
+        "Sibling care assistance",
+        "Emotional support and resources"
+      ]
+    },
+    {
+      "name": "Prenatal Education",
+      "description": "Personalized childbirth education sessions tailored to your needs and preferences. Learn about the stages of labor, comfort measures, medical interventions, and how to advocate for yourself.",
+      "includes": [
+        "Understanding labor and birth",
+        "Comfort techniques and positions",
+        "Birth preferences planning",
+        "Partner preparation",
+        "Newborn care basics",
+        "Postpartum planning"
+      ]
+    },
+    {
+      "name": "Virtual Support Package",
+      "description": "For families who prefer remote support or are outside my service area. Includes video calls, text support, and resources to help you feel prepared and supported throughout your journey.",
+      "includes": [
+        "Video prenatal consultations",
+        "Birth preferences review",
+        "On-call text/video support during labor",
+        "Postpartum check-in calls",
+        "Curated resource library access",
+        "Email support throughout pregnancy"
+      ]
+    }
+  ]
+}

@@ -28,13 +28,22 @@ export function Footer() {
             <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/about">About</NavLink>
-                <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/speaking">Speaking</NavLink>
-                <NavLink href="/uses">Uses</NavLink>
+                <NavLink href="/services">Services</NavLink>
+                <NavLink href="/blog">Blog</NavLink>
+                <NavLink href="/resources">Resources</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Spencer Sharp. All rights
-                reserved.
+                &copy; {new Date().getFullYear()} Rising Hope Doula. All rights
+                reserved. Content managed with{' '}
+                <a
+                  href="https://pagescms.org"
+                  className="underline hover:text-teal-500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pages CMS
+                </a>
+                .
               </p>
             </div>
           </ContainerInner>

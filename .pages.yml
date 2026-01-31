@@ -8,37 +8,13 @@ media:
   categories: [image]
 
 content:
-  - name: pages
-    label: Pages
-    type: collection
-    path: content/pages
-    format: yaml-frontmatter
-    filename: "{primary}.md"
-    fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-      - name: body
-        label: Body
-        type: rich-text
-    view:
-      primary: title
-      fields: [title, description]
-      sort: [title]
-      default:
-        sort: title
-        order: asc
-
-  - name: posts
+  # Blog posts (MDX files in src/app/blog/)
+  - name: blog
     label: Blog Posts
     type: collection
-    path: content/posts
-    format: yaml-frontmatter
-    filename: "{year}-{month}-{day}-{primary}.md"
+    path: src/app/blog
+    format: code
+    filename: "{primary}/page.mdx"
     fields:
       - name: title
         label: Title
@@ -54,20 +30,100 @@ content:
       - name: author
         label: Author
         type: string
-      - name: published
-        label: Published
-        type: boolean
-        default: true
+        default: Rising Hope Doula
       - name: body
-        label: Body
-        type: rich-text
+        label: Content
+        type: code
+        options:
+          language: mdx
     view:
       primary: title
-      fields: [title, date, published]
+      fields: [title, date]
       sort: [date, title]
       default:
         sort: date
         order: desc
+
+  # Testimonials data (editable content)
+  - name: testimonials
+    label: Testimonials
+    type: file
+    path: content/testimonials.json
+    format: json
+    fields:
+      - name: testimonials
+        label: Testimonials
+        type: object
+        list: true
+        fields:
+          - name: quote
+            label: Quote
+            type: text
+            required: true
+          - name: author
+            label: Author Name
+            type: string
+            required: true
+          - name: context
+            label: Context
+            type: string
+          - name: category
+            label: Category
+            type: select
+            options:
+              values:
+                - Birth Support
+                - Postpartum Care
+                - Prenatal Education
+
+  # Services data (editable content)
+  - name: services
+    label: Services
+    type: file
+    path: content/services.json
+    format: json
+    fields:
+      - name: services
+        label: Services
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Service Name
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+            required: true
+          - name: includes
+            label: What's Included
+            type: string
+            list: true
+
+  # Site settings
+  - name: settings
+    label: Site Settings
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - name: siteName
+        label: Site Name
+        type: string
+        default: Rising Hope Doula
+      - name: email
+        label: Contact Email
+        type: string
+      - name: phone
+        label: Phone Number
+        type: string
+      - name: instagram
+        label: Instagram URL
+        type: string
+      - name: linkedin
+        label: LinkedIn URL
+        type: string
 
 settings:
   content:

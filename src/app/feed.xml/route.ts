@@ -10,36 +10,37 @@ export async function GET(req: Request) {
   }
 
   let author = {
-    name: 'Spencer Sharp',
-    email: 'spencer@planetaria.tech',
+    name: 'Rising Hope Doula',
+    email: 'hello@risinghopedoula.com',
   }
 
   let feed = new Feed({
-    title: author.name,
-    description: 'Your blog description',
+    title: 'Rising Hope Doula Blog',
+    description:
+      'Insights on pregnancy, birth, postpartum care, and the journey into parenthood.',
     author,
     id: siteUrl,
     link: siteUrl,
     image: `${siteUrl}/favicon.ico`,
     favicon: `${siteUrl}/favicon.ico`,
-    copyright: `All rights reserved ${new Date().getFullYear()}`,
+    copyright: `All rights reserved ${new Date().getFullYear()}, Rising Hope Doula`,
     feedLinks: {
       rss2: `${siteUrl}/feed.xml`,
     },
   })
 
   let articleIds = require
-    .context('../articles', true, /\/page\.mdx$/)
+    .context('../blog', true, /\/page\.mdx$/)
     .keys()
     .filter((key) => key.startsWith('./'))
     .map((key) => key.slice(2).replace(/\/page\.mdx$/, ''))
 
   for (let id of articleIds) {
-    let url = String(new URL(`/articles/${id}`, req.url))
+    let url = String(new URL(`/blog/${id}`, req.url))
     let html = await (await fetch(url)).text()
     let $ = cheerio.load(html)
 
-    let publicUrl = `${siteUrl}/articles/${id}`
+    let publicUrl = `${siteUrl}/blog/${id}`
     let article = $('article').first()
     let title = article.find('h1').first().text()
     let date = article.find('time').first().attr('datetime')
