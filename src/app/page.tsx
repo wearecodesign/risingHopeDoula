@@ -1,13 +1,13 @@
 import Image, { type ImageProps } from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import he from 'he';
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   InstagramIcon,
-  LinkedInIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -16,6 +16,8 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+
+import content from '../../content/home.json';
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -219,13 +221,10 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-primary-wine sm:text-5xl">
-            Compassionate support for your birth and postpartum journey.
+            {he.decode(content.heroHeadline)}
           </h1>
           <p className="mt-6 text-base text-primary-grey">
-            I&apos;m a certified doula providing evidence-based, heart-centered
-            support for families during pregnancy, birth, and the postpartum
-            period. Every family deserves to feel informed, respected, and held
-            through one of life&apos;s most transformative experiences.
+            {he.decode(content.heroTagline)}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
