@@ -8,6 +8,22 @@ media:
   categories: [image]
 
 content:
+  # Home page hero content (editable content)
+  - name: home
+    label: Home Page
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - name: heroHeadline
+        label: Hero Headline
+        type: string
+        required: true
+      - name: heroTagline
+        label: Hero Tagline
+        type: string
+        required: true
+  
   # Blog posts (MDX files in src/app/blog/)
   - name: blog
     label: Blog Posts
