@@ -149,8 +149,8 @@ function NavItem({
         className={clsx(
           'relative block px-3 py-2 transition',
           isActive
-            ? 'text-teal-500 dark:text-teal-400'
-            : 'hover:text-teal-500 dark:hover:text-teal-400',
+            ? 'text-secondary-wine'
+            : 'hover:text-secondary-wine',
         )}
       >
         {children}
@@ -430,7 +430,7 @@ export function Header() {
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
-                  <ThemeToggle />
+                  {/* <ThemeToggle /> */}
                 </div>
               </div>
             </div>

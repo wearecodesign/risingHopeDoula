@@ -33,4 +33,73 @@
   --text-8xl--line-height: 1;
   --text-9xl: 8rem;
   --text-9xl--line-height: 1;
+
+  --color-primary-wine: var(--color-wine-900);
+  --color-primary-rose: var(--color-rose-600);
+  --color-primary-sage: var(--color-sage-500);
+  --color-primary-grey: var(--color-grey-900);
+  --color-primary-amber: var(--color-amber-700);
+  
+  --color-secondary-wine: var(--color-wine-600);
+  --color-secondary-rose: var(--color-rose-600);
+  --color-secondary-sage: var(--color-sage-700);
+  --color-secondary-grey: var(--color-grey-700);
+  --color-secondary-amber: var(--color-amber-800);
+  
+  --color-wine-50: #faf5f7;
+  --color-wine-100: #f6edf0;
+  --color-wine-200: #eedce3;
+  --color-wine-300: #e1c0cc;
+  --color-wine-400: #cd99ab;
+  --color-wine-500: #bb798e;
+  --color-wine-600: #a55d70;
+  --color-wine-700: #8c4a59;
+  --color-wine-800: #753f4c;
+  --color-wine-900: #663A44; /* Primary Wine */
+
+  --color-rose-50: #faf6f6;
+  --color-rose-100: #f4eced;
+  --color-rose-200: #ecdcdd;
+  --color-rose-300: #dec3c5;
+  --color-rose-400: #c9a0a3;
+  --color-rose-500: #bb8b8e; 
+  --color-rose-600: #9d6568; /* Primary Rose */
+  --color-rose-700: #835255;
+  --color-rose-800: #6e4648;
+  --color-rose-900: #5d3f41;
+
+  --color-sage-50: #f4f6f3;
+  --color-sage-100: #e7e8e3;
+  --color-sage-200: #cfd2c8;
+  --color-sage-300: #abb2a3;
+  --color-sage-400: #949c8b; 
+  --color-sage-500: #646f5a; /* Primary Sage */
+  --color-sage-600: #4d5645;
+  --color-sage-700: #3d4537;
+  --color-sage-800: #32382d;
+  --color-sage-900: #292e26;
+  --color-sage-950: #171a14;
+
+  --color-grey-50: #f6f7f7;
+  --color-grey-100: #e2e5e3;
+  --color-grey-200: #c3c9c6; 
+  --color-grey-300: #a0a8a5;
+  --color-grey-400: #7b8681;
+  --color-grey-500: #616b67; 
+  --color-grey-600: #4c5551;
+  --color-grey-700: #3f4643;
+  --color-grey-800: #353a38;
+  --color-grey-900: #2f3231; /* Primary Grey */ 
+
+  --color-amber-50: #faf8ec;
+  --color-amber-100: #f5eecc;
+  --color-amber-200: #ecdc9c;
+  --color-amber-300: #e0c364;
+  --color-amber-400: #d6aa39;
+  --color-amber-500: #cf9c2e; 
+  --color-amber-600: #aa7524;
+  --color-amber-700: #885620; /* Primary Amber */
+  --color-amber-800: #724621;
+  --color-amber-900: #623b21;
+    
 }

@@ -218,10 +218,10 @@ export default async function Home() {
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          <h1 className="text-4xl font-bold tracking-tight text-primary-wine sm:text-5xl">
             Compassionate support for your birth and postpartum journey.
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 text-base text-primary-grey">
             I&apos;m a certified doula providing evidence-based, heart-centered
             support for families during pregnancy, birth, and the postpartum
             period. Every family deserves to feel informed, respected, and held
@@ -232,11 +232,6 @@ export default async function Home() {
               href="#"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            />
-            <SocialLink
-              href="#"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
             />
           </div>
         </div>
