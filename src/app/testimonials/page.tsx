@@ -1,19 +1,9 @@
 import { type Metadata } from 'next'
+import testimonials from '../../../content/testimonials.json';
 
 import { Card } from '@/components/Card'
-import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
-
-function TestimonialSection({
-  children,
-  ...props
-}: React.ComponentPropsWithoutRef<typeof Section>) {
-  return (
-    <Section {...props}>
-      <div className="space-y-16">{children}</div>
-    </Section>
-  )
-}
+import { TestimonialSection } from '@/components/TestimonialSection'
 
 function Testimonial({
   quote,
@@ -52,41 +42,16 @@ export default function Testimonials() {
       intro="Every birth story is unique, and it's a privilege to be part of such transformative moments. Here's what some families have shared about their experience."
     >
       <div className="space-y-20">
-        <TestimonialSection title="Birth Support">
-          <Testimonial
-            quote="Having our doula by our side was the best decision we made for our birth. She helped us navigate unexpected changes with grace and made sure our voices were heard. We felt supported every step of the way."
-            author="Sarah & Michael"
-            context="First-time parents, hospital birth"
-          />
-          <Testimonial
-            quote="I was nervous about giving birth, especially as a first-time mom. Our doula's calm presence and constant encouragement gave me the confidence I needed. She helped my partner know exactly how to support me."
-            author="Jennifer"
-            context="Unmedicated birth"
-          />
-          <Testimonial
-            quote="After a difficult first birth experience, I was anxious about my second. Our doula helped me process my fears and create a birth plan that honored my needs. This time, I felt empowered and in control."
-            author="Maria"
-            context="VBAC birth"
-          />
-        </TestimonialSection>
-        <TestimonialSection title="Postpartum Care">
-          <Testimonial
-            quote="The postpartum period was harder than I expected. Having someone come in who actually understood what I was going through was invaluable. She helped me rest, fed my toddler, and reminded me that it's okay to ask for help."
-            author="Amanda"
-            context="Second-time mom, postpartum support"
-          />
-          <Testimonial
-            quote="Overnight postpartum support saved my sanity. Knowing someone was there to care for the baby so I could sleep was life-changing. I woke up feeling human again."
-            author="David & Lisa"
-            context="Twins, overnight care"
-          />
-        </TestimonialSection>
-        <TestimonialSection title="Prenatal Education">
-          <Testimonial
-            quote="The childbirth education sessions were exactly what we needed. Everything was explained clearly, and we felt so much more prepared walking into the hospital. I actually looked forward to labor!"
-            author="Nicole & James"
-            context="First-time parents"
-          />
+        <TestimonialSection>
+          {testimonials.testimonials.map((testimonial) => (
+            <div key={testimonial.author} className="md:col-span-1">
+              <Testimonial
+                quote={testimonial.quote}
+                author={testimonial.author}
+                context={testimonial.context}
+              />
+            </div>
+          ))}
         </TestimonialSection>
       </div>
     </SimpleLayout>
