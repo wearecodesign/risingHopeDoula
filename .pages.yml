@@ -15,14 +15,19 @@ content:
     path: content/menu.json
     format: json
     fields:
-      - name: linkText
-        label: Label
-        type: string
-        required: true
-      - name: linkHref
-        label: Link Path
-        type: string
-        required: true
+      - name: menuLinks
+        label: Menu Links
+        type: object
+        list: true
+        fields:
+          - name: linkText
+            label: Label
+            type: string
+            required: true
+          - name: linkHref
+            label: Link Path
+            type: string
+            required: true
   
   # Home page hero content (editable content)
   - name: home
