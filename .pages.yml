@@ -8,6 +8,22 @@ media:
   categories: [image]
 
 content:
+  # Menu Links
+  - name: menu
+    label: Menu Links
+    type: file
+    path: content/menu.json
+    format: json
+    fields:
+      - name: linkText
+        label: Label
+        type: string
+        required: true
+      - name: linkHref
+        label: Link Path
+        type: string
+        required: true
+  
   # Home page hero content (editable content)
   - name: home
     label: Home Page
@@ -23,6 +39,24 @@ content:
         label: Hero Tagline
         type: string
         required: true
+
+  # About page content (editable content)
+  - name: about
+    label: About Page
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - name: heroHeadline
+        label: Hero Headline
+        type: string
+        required: true
+      - name: aboutContent
+        label: About Content
+        type: rich-text
+        required: true
+        options:
+          media: false
   
   # Blog posts (MDX files in src/app/blog/)
   - name: blog
