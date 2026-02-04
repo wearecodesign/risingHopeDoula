@@ -15,9 +15,6 @@ const nextConfig = {
   },
   trailingSlash: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  outputFileTracingIncludes: {
-    '/blog/*': ['./src/app/blog/**/*.mdx'],
-  },
 }
 
 const withMDX = nextMDX({

@@ -3,8 +3,8 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import he from 'he';
 
-import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
+// import { Button } from '@/components/Button'
+// import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   InstagramIcon,
@@ -14,8 +14,8 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
-import { formatDate } from '@/lib/formatDate'
+// import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
+// import { formatDate } from '@/lib/formatDate'
 
 import content from '../../content/home.json';
 
@@ -61,20 +61,20 @@ function HeartIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function Article({ article }: { article: ArticleWithSlug }) {
-  return (
-    <Card as="article">
-      <Card.Title href={`/blog/${article.slug}`}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
-      </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read more</Card.Cta>
-    </Card>
-  )
-}
+// function Article({ article }: { article: ArticleWithSlug }) {
+//   return (
+//     <Card as="article">
+//       <Card.Title href={`/blog/${article.slug}`}>
+//         {article.title}
+//       </Card.Title>
+//       <Card.Eyebrow as="time" dateTime={article.date} decorate>
+//         {formatDate(article.date)}
+//       </Card.Eyebrow>
+//       <Card.Description>{article.description}</Card.Description>
+//       <Card.Cta>Read more</Card.Cta>
+//     </Card>
+//   )
+// }
 
 function SocialLink({
   icon: Icon,
@@ -89,100 +89,100 @@ function SocialLink({
   )
 }
 
-function Newsletter() {
-  return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-    >
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay connected</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get updates on birth tips, postpartum resources, and supportive
-        insights for your journey into parenthood.
-      </p>
-      <div className="mt-6 flex items-center">
-        <span className="flex min-w-0 flex-auto p-px">
-          <input
-            type="email"
-            placeholder="Email address"
-            aria-label="Email address"
-            required
-            className="w-full appearance-none rounded-[calc(var(--radius-md)-1px)] bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 outline outline-zinc-900/10 placeholder:text-zinc-400 focus:ring-4 focus:ring-teal-500/10 focus:outline-teal-500 sm:text-sm dark:bg-zinc-700/15 dark:text-zinc-200 dark:outline-zinc-700 dark:placeholder:text-zinc-500 dark:focus:ring-teal-400/10 dark:focus:outline-teal-400"
-          />
-        </span>
-        <Button type="submit" className="ml-4 flex-none">
-          Subscribe
-        </Button>
-      </div>
-    </form>
-  )
-}
+// function Newsletter() {
+//   return (
+//     <form
+//       action="/thank-you"
+//       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+//     >
+//       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+//         <MailIcon className="h-6 w-6 flex-none" />
+//         <span className="ml-3">Stay connected</span>
+//       </h2>
+//       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+//         Get updates on birth tips, postpartum resources, and supportive
+//         insights for your journey into parenthood.
+//       </p>
+//       <div className="mt-6 flex items-center">
+//         <span className="flex min-w-0 flex-auto p-px">
+//           <input
+//             type="email"
+//             placeholder="Email address"
+//             aria-label="Email address"
+//             required
+//             className="w-full appearance-none rounded-[calc(var(--radius-md)-1px)] bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 outline outline-zinc-900/10 placeholder:text-zinc-400 focus:ring-4 focus:ring-teal-500/10 focus:outline-teal-500 sm:text-sm dark:bg-zinc-700/15 dark:text-zinc-200 dark:outline-zinc-700 dark:placeholder:text-zinc-500 dark:focus:ring-teal-400/10 dark:focus:outline-teal-400"
+//           />
+//         </span>
+//         <Button type="submit" className="ml-4 flex-none">
+//           Subscribe
+//         </Button>
+//       </div>
+//     </form>
+//   )
+// }
 
-interface Service {
-  name: string
-  description: string
-  href: string
-}
+// interface Service {
+//   name: string
+//   description: string
+//   href: string
+// }
 
-function ServiceCard({ service }: { service: Service }) {
-  return (
-    <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <HeartIcon className="h-6 w-6" />
-      </div>
-      <dl className="flex flex-auto flex-wrap gap-x-2">
-        <dt className="sr-only">Service</dt>
-        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          {service.name}
-        </dd>
-        <dt className="sr-only">Description</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-          {service.description}
-        </dd>
-      </dl>
-    </li>
-  )
-}
+// function ServiceCard({ service }: { service: Service }) {
+//   return (
+//     <li className="flex gap-4">
+//       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+//         <HeartIcon className="h-6 w-6" />
+//       </div>
+//       <dl className="flex flex-auto flex-wrap gap-x-2">
+//         <dt className="sr-only">Service</dt>
+//         <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+//           {service.name}
+//         </dd>
+//         <dt className="sr-only">Description</dt>
+//         <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+//           {service.description}
+//         </dd>
+//       </dl>
+//     </li>
+//   )
+// }
 
-function Services() {
-  let services: Array<Service> = [
-    {
-      name: 'Birth Doula Support',
-      description: 'Continuous support during labor and delivery',
-      href: '/services',
-    },
-    {
-      name: 'Postpartum Care',
-      description: 'Nurturing support in the fourth trimester',
-      href: '/services',
-    },
-    {
-      name: 'Prenatal Guidance',
-      description: 'Education and preparation for your birth',
-      href: '/services',
-    },
-  ]
+// function Services() {
+//   let services: Array<Service> = [
+//     {
+//       name: 'Birth Doula Support',
+//       description: 'Continuous support during labor and delivery',
+//       href: '/services',
+//     },
+//     {
+//       name: 'Postpartum Care',
+//       description: 'Nurturing support in the fourth trimester',
+//       href: '/services',
+//     },
+//     {
+//       name: 'Prenatal Guidance',
+//       description: 'Education and preparation for your birth',
+//       href: '/services',
+//     },
+//   ]
 
-  return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <HeartIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Services</span>
-      </h2>
-      <ol className="mt-6 space-y-4">
-        {services.map((service, index) => (
-          <ServiceCard key={index} service={service} />
-        ))}
-      </ol>
-      <Button href="/services" variant="secondary" className="group mt-6 w-full">
-        View all services
-      </Button>
-    </div>
-  )
-}
+//   return (
+//     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+//       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+//         <HeartIcon className="h-6 w-6 flex-none" />
+//         <span className="ml-3">Services</span>
+//       </h2>
+//       <ol className="mt-6 space-y-4">
+//         {services.map((service, index) => (
+//           <ServiceCard key={index} service={service} />
+//         ))}
+//       </ol>
+//       <Button href="/services" variant="secondary" className="group mt-6 w-full">
+//         View all services
+//       </Button>
+//     </div>
+//   )
+// }
 
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
@@ -214,7 +214,7 @@ function Photos() {
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4)
+  // let articles = (await getAllArticles()).slice(0, 4)
 
   return (
     <>
