@@ -62,42 +62,6 @@ content:
         required: true
         options:
           media: false
-  
-  # Blog posts (MDX files in src/app/blog/)
-  - name: blog
-    label: Blog Posts
-    type: collection
-    path: src/app/blog
-    format: code
-    filename: "{primary}/page.mdx"
-    fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-      - name: date
-        label: Date
-        type: date
-        required: true
-      - name: author
-        label: Author
-        type: string
-        default: Rising Hope Doula
-      - name: body
-        label: Content
-        type: code
-        options:
-          language: mdx
-    view:
-      primary: title
-      fields: [title, date]
-      sort: [date, title]
-      default:
-        sort: date
-        order: desc
 
   # Testimonials data (editable content)
   - name: testimonials
