@@ -63,11 +63,11 @@ export default function About() {
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          <h1 className="text-4xl font-bold tracking-tight text-primary-wine sm:text-5xl">
             I&apos;m here to support you through one of life&apos;s most
             transformative journeys.
           </h1>
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="mt-6 space-y-7 text-base text-primary-grey">
             <p>
               My journey to becoming a doula began with my own birth experience.
               I learned firsthand how powerful it is to have continuous,

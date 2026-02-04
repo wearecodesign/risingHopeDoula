@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import he from 'he';
+import menu from '../../content/menu.json';
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
 
@@ -27,23 +29,15 @@ export function Footer() {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/about">About</NavLink>
-                <NavLink href="/services">Services</NavLink>
-                <NavLink href="/blog">Blog</NavLink>
-                <NavLink href="/resources">Resources</NavLink>
+                {menu.menuLinks.map((link) => (
+                  <NavLink key={link.linkText} href={link.linkHref}>
+                    {he.decode(link.linkText)}
+                  </NavLink>
+                ))}
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Rising Hope Doula. All rights
-                reserved. Content managed with{' '}
-                <a
-                  href="https://pagescms.org"
-                  className="underline hover:text-teal-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Pages CMS
-                </a>
-                .
+                reserved.
               </p>
             </div>
           </ContainerInner>

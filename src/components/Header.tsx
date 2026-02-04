@@ -12,6 +12,8 @@ import {
   PopoverPanel,
 } from '@headlessui/react'
 import clsx from 'clsx'
+import he from 'he';
+import menu from '../../content/menu.json';
 
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.jpg'
@@ -121,11 +123,11 @@ function MobileNavigation(
         </div>
         <nav className="mt-6">
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-            <MobileNavItem href="/about">About</MobileNavItem>
-            <MobileNavItem href="/services">Services</MobileNavItem>
-            <MobileNavItem href="/blog">Blog</MobileNavItem>
-            <MobileNavItem href="/testimonials">Testimonials</MobileNavItem>
-            <MobileNavItem href="/resources">Resources</MobileNavItem>
+            {menu.menuLinks.map((link) => (
+              <MobileNavItem key={link.linkText} href={link.linkHref}>
+                {he.decode(link.linkText)}
+              </MobileNavItem>
+            ))}
           </ul>
         </nav>
       </PopoverPanel>
@@ -166,11 +168,11 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/services">Services</NavItem>
-        <NavItem href="/blog">Blog</NavItem>
-        <NavItem href="/testimonials">Testimonials</NavItem>
-        <NavItem href="/resources">Resources</NavItem>
+        {menu.menuLinks.map((link) => (
+          <NavItem key={link.linkText} href={link.linkHref}>
+            {he.decode(link.linkText)}
+          </NavItem>
+        ))}
       </ul>
     </nav>
   )
