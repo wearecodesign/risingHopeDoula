@@ -1,0 +1,24 @@
+{
+    "menuLinks": [
+        {
+            "linkText": "About",
+            "linkHref": "/about"
+        },
+        {
+            "linkText": "Services",
+            "linkHref": "/services"
+        },
+        {
+            "linkText": "Blog",
+            "linkHref": "/blog"
+        },
+        {
+            "linkText": "Testimonials",
+            "linkHref": "/testimonials"
+        },
+        {
+            "linkText": "Resources",
+            "linkHref": "/resources"
+        }
+    ]
+}
