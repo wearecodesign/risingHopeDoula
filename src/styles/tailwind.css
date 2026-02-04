@@ -4,6 +4,8 @@
 @plugin '@tailwindcss/typography';
 @config '../../typography.ts';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --text-xs: 0.8125rem;
   --text-xs--line-height: 1.5rem;
