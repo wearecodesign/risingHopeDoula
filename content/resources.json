@@ -23,7 +23,9 @@
     {
       "title": "Ina May's Guide to Childbirth by Ina May Gaskin",
       "description": "A classic that empowers birthing people with positive birth stories and practical wisdom. Great for building confidence in your body&apos;s ability to birth.",
-      "category": "Books I Recommend"
+      "category": {
+        "name": "Books I Recommend"
+      }
     },
     {
       "title": "The Fourth Trimester by Kimberly Ann Johnson",
