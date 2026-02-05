@@ -46,7 +46,7 @@ export default function About() {
               key="email"
               href={`mailto:${settings.email}`}
               icon={MailIcon}
-              className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
+              className="mt-8 border-t border-grey-100 pt-8"
             >
               {settings.email}
             </SocialLink>

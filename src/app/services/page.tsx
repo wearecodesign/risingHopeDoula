@@ -66,7 +66,7 @@ export default function Services() {
         </p>
         <a
           href={`mailto:${settings.email}`}
-          className="mt-4 inline-block rounded-full bg-primary-sage px-6 py-2 text-sm font-semibold text-white transition hover:bg-sage-600"
+          className="mt-4 inline-block rounded-full bg-primary-wine px-6 py-2 text-sm font-semibold text-white transition hover:bg-wine-800"
         >
           Schedule a free consultation
         </a>

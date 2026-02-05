@@ -130,14 +130,6 @@ content:
           - name: context
             label: Context
             type: string
-          - name: category
-            label: Category
-            type: select
-            options:
-              values:
-                - Birth Support
-                - Postpartum Care
-                - Prenatal Education
 
   # Services data (editable content)
   - name: services
@@ -183,6 +175,64 @@ content:
             label: What's Included
             type: string
             list: true
+
+  # Resources data (editable content)
+  - name: resources
+    label: Resources
+    type: file
+    path: content/resources.json
+    format: json
+    fields:
+      - name: metaData
+        label: Meta Data
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: string
+            required: true
+      - name: headline
+        label: Headline
+        type: string
+        required: true
+      - name: intro
+        label: Intro Paragraph
+        type: text
+        required: true
+      - name: categories
+        label: Categories
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Category Name
+            type: string
+            required: true
+      - name: resources
+        label: Resources
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: text
+            required: true
+          - name: description
+            label: Description
+            type: string
+            required: true
+          - name: category
+            label: Category
+            type: reference
+            options:
+              collection: categories
+          - name: href
+            label: URL
+            type: string
 
   # Site settings
   - name: settings

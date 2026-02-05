@@ -18,14 +18,14 @@ function Testimonial({
 }) {
   return (
     <Card as="article">
-      <blockquote className="text-base text-zinc-600 dark:text-zinc-400">
+      <blockquote className="text-base text-primary-grey">
         &ldquo;{quote}&rdquo;
       </blockquote>
       <footer className="mt-4">
-        <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <p className="text-sm font-semibold text-primary-gray">
           {author}
         </p>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">{context}</p>
+        <p className="text-sm text-grey-600">{context}</p>
       </footer>
     </Card>
   )

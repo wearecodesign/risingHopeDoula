@@ -1,0 +1,94 @@
+{
+  "metaData": {
+    "title": "Resources",
+    "description": "Helpful resources for pregnancy, birth, and postpartum—books, websites, and local support."
+  },
+  "headline": "Resources for your journey into parenthood.",
+  "intro": "I've gathered some of my favorite books, websites, and local resources to support you during pregnancy, birth, and beyond. This page is managed via Pages CMS—check back for updates!",
+  "categories": [
+    {
+      "name": "Books I Recommend"
+    },
+    {
+      "name": "Online Resources"
+    },
+    {
+      "name": "Preparing for Birth"
+    },
+    {
+      "name": "Postpartum Essentials"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Ina May's Guide to Childbirth by Ina May Gaskin",
+      "description": "A classic that empowers birthing people with positive birth stories and practical wisdom. Great for building confidence in your body&apos;s ability to birth.",
+      "category": "Books I Recommend"
+    },
+    {
+      "title": "The Fourth Trimester by Kimberly Ann Johnson",
+      "description": "An essential guide to postpartum recovery that addresses the physical, emotional, and relational changes after birth. Every new parent should read this.",
+      "category": "Books I Recommend"
+    },
+    {
+      "title": "Nurture by Erica Chidi",
+      "description": "A modern guide to pregnancy, birth, and the first weeks with baby. Beautifully designed with evidence-based information presented in an accessible way.",
+      "category": "Books I Recommend"
+    },
+    {
+      "title": "The Birth Partner by Penny Simkin",
+      "description": "The definitive guide for anyone supporting a birthing person. Perfect for partners, family members, and doulas.",
+      "category": "Books I Recommend"
+    },
+    {
+      "title": "Evidence Based Birth",
+      "description": "Research-backed information on pregnancy and birth topics. Their podcast and articles help you make informed decisions about your care.",
+      "category": "Online Resources"
+    },
+    {
+      "title": "Spinning Babies",
+      "description": "Techniques for optimal fetal positioning and comfort during pregnancy and labor. Helpful for preparing your body for birth.",
+      "category": "Online Resources"
+    },
+    {
+      "title": "Postpartum Support International",
+      "description": "Support and resources for perinatal mental health. If you&apos;re struggling, you&apos;re not alone—help is available.",
+      "category": "Online Resources"
+    },
+    {
+      "title": "KellyMom",
+      "description": "Evidence-based breastfeeding and parenting resources. A trusted source for infant feeding questions.",
+      "category": "Online Resources"
+    },
+    {
+      "title": "Questions to Ask Your Provider",
+      "description": "Understanding your options starts with communication. Don&apos;t hesitate to ask about their practices, intervention rates, and how they support birth preferences.",
+      "category": "Preparing for Birth"
+    },
+    {
+      "title": "Creating Your Birth Preferences",
+      "description": "A birth plan isn&apos;t about controlling every detail—it&apos;s about communicating your values and priorities. I can help you create one that reflects your needs.",
+      "category": "Preparing for Birth"
+    },
+    {
+      "title": "Comfort Measures for Labor",
+      "description": "Movement, breathing, hydrotherapy, massage, and position changes can all help manage labor sensations. We&apos;ll practice these during our prenatal visits.",
+      "category": "Preparing for Birth"
+    },
+    {
+      "title": "Building Your Support Network",
+      "description": "Postpartum is not meant to be done alone. Consider meal trains, cleaning help, and family support. I can help you plan for this during pregnancy.",
+      "category": "Postpartum Essentials"
+    },
+    {
+      "title": "Signs of Perinatal Mood Disorders",
+      "description": "Baby blues are common, but persistent symptoms need attention. Anxiety, depression, intrusive thoughts, and rage can all be signs that you need support.",
+      "category": "Postpartum Essentials"
+    },
+    {
+      "title": "Infant Feeding Resources",
+      "description": "Whether you&apos;re breastfeeding, pumping, formula feeding, or combo-feeding—I support your choices and can connect you with lactation specialists if needed.",
+      "category": "Postpartum Essentials"
+    }
+  ]
+}
