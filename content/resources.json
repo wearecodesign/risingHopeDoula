@@ -4,7 +4,7 @@
     "description": "Helpful resources for pregnancy, birth, and postpartum—books, websites, and local support."
   },
   "headline": "Resources for your journey into parenthood.",
-  "intro": "I've gathered some of my favorite books, websites, and local resources to support you during pregnancy, birth, and beyond. This page is managed via Pages CMS—check back for updates!",
+  "intro": "I've gathered some of my favorite books, websites, and local resources to support you during pregnancy, birth, and beyond.",
   "resources": [
     {
       "title": "Ina May's Guide to Childbirth by Ina May Gaskin",
@@ -29,22 +29,26 @@
     {
       "title": "Evidence Based Birth",
       "description": "Research-backed information on pregnancy and birth topics. Their podcast and articles help you make informed decisions about your care.",
-      "category": "Online Resources"
+      "category": "Online Resources",
+      "href": "https://evidencebasedbirth.com"
     },
     {
       "title": "Spinning Babies",
       "description": "Techniques for optimal fetal positioning and comfort during pregnancy and labor. Helpful for preparing your body for birth.",
-      "category": "Online Resources"
+      "category": "Online Resources",
+      "href": "https://spinningbabies.com"
     },
     {
       "title": "Postpartum Support International",
       "description": "Support and resources for perinatal mental health. If you&apos;re struggling, you&apos;re not alone—help is available.",
-      "category": "Online Resources"
+      "category": "Online Resources",
+      "href": "https://postpartum.net"
     },
     {
       "title": "KellyMom",
       "description": "Evidence-based breastfeeding and parenting resources. A trusted source for infant feeding questions.",
-      "category": "Online Resources"
+      "category": "Online Resources",
+      "href": "https://kellymom.com"
     },
     {
       "title": "Questions to Ask Your Provider",
