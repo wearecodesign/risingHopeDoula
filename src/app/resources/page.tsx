@@ -54,7 +54,7 @@ export default function Resources() {
           <ResourceSection key={category} title={category}>
             {content.resources.filter((resource) => resource.category === category).map((resource) => (
               <Resource key={resource.title} title={resource.title} href={resource.href ?? undefined}>
-                {resource.description}
+                {he.decode(resource.description)}
               </Resource>
             ))}
           </ResourceSection>
