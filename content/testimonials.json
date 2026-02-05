@@ -1,4 +1,10 @@
 {
+  "metaData": {
+    "title": "Testimonials",
+    "description": "Hear from families I've had the honor of supporting through pregnancy, birth, and postpartum."
+  },
+  "headline": "Stories from families I've had the honor of supporting.",
+  "intro": "Every birth story is unique, and it's a privilege to be part of such transformative moments. Here's what some families have shared about their experience.",
   "testimonials": [
     {
       "quote": "Having our doula by our side was the best decision we made for our birth. She helped us navigate unexpected changes with grace and made sure our voices were heard. We felt supported every step of the way.",

@@ -1,11 +1,11 @@
 import { Container } from '@/components/Container'
 
 export function SimpleLayout({
-  title,
+  headline,
   intro,
   children,
 }: {
-  title: string
+  headline: string
   intro: string
   children?: React.ReactNode
 }) {
@@ -13,7 +13,7 @@ export function SimpleLayout({
     <Container className="mt-16 sm:mt-32">
       <header className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight text-primary-wine sm:text-5xl">
-          {title}
+          {headline}
         </h1>
         <p className="mt-6 text-base text-primary-grey">
           {intro}

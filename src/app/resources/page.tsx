@@ -43,7 +43,7 @@ export const metadata = {
 export default function Resources() {
   return (
     <SimpleLayout
-      title="Resources for your journey into parenthood."
+      headline="Resources for your journey into parenthood."
       intro="I've gathered some of my favorite books, websites, and local resources to support you during pregnancy, birth, and beyond. This page is managed via Pages CMS—check back for updates!"
     >
       <div className="space-y-20">

@@ -1,4 +1,10 @@
 {
+  "metaData": {
+    "title": "Services",
+    "description": "Doula services including birth support, postpartum care, and prenatal education."
+  },
+  "headline": "Services to support your unique journey.",
+  "intro": "Every family's needs are different. I offer flexible packages designed to meet you where you are—whether you need comprehensive birth support, postpartum care, or guidance preparing for your new arrival.",
   "services": [
     {
       "name": "Birth Doula Support",

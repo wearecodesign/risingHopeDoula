@@ -1,5 +1,7 @@
 import { type Metadata } from 'next'
-import testimonials from '../../../content/testimonials.json';
+import he from 'he';
+
+import content from '../../../content/testimonials.json';
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
@@ -29,21 +31,17 @@ function Testimonial({
   )
 }
 
-export const metadata: Metadata = {
-  title: 'Testimonials',
-  description:
-    "Hear from families I've had the honor of supporting through pregnancy, birth, and postpartum.",
-}
+export const metadata: Metadata = content.metaData;
 
 export default function Testimonials() {
   return (
     <SimpleLayout
-      title="Stories from families I've had the honor of supporting."
-      intro="Every birth story is unique, and it's a privilege to be part of such transformative moments. Here's what some families have shared about their experience."
+      headline={he.decode(content.headline)}
+      intro={he.decode(content.intro)}
     >
       <div className="space-y-20">
         <TestimonialSection>
-          {testimonials.testimonials.map((testimonial) => (
+          {content.testimonials.map((testimonial) => (
             <div key={testimonial.author} className="md:col-span-1">
               <Testimonial
                 quote={testimonial.quote}

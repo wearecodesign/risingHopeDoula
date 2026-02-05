@@ -1,5 +1,10 @@
 {
   "siteName": "Rising Hope Doula",
   "email": "risinghopedoula@gmail.com",
-  "instagram": "https://instagram.com/risinghopedoula"
+  "socials": [
+    {
+      "name": "Instagram",
+      "url": "https://instagram.com/risinghopedoula"
+    }
+  ]
 }
