@@ -219,6 +219,7 @@ content:
           - name: category
             label: Category
             type: select
+            required: true
             options:
               creatable: true
               values:
