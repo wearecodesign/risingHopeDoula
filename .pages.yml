@@ -203,15 +203,6 @@ content:
         label: Intro Paragraph
         type: text
         required: true
-      - name: categories
-        label: Categories
-        type: object
-        list: true
-        fields:
-          - name: name
-            label: Category Name
-            type: string
-            required: true
       - name: resources
         label: Resources
         type: object
@@ -227,9 +218,11 @@ content:
             required: true
           - name: category
             label: Category
-            type: reference
+            type: select
             options:
-              collection: categories
+              creatable: true
+              values:
+                [Books I Recommend, Online Resources, Preparing for Birth, Postpartum Essentials]
           - name: href
             label: URL
             type: string
