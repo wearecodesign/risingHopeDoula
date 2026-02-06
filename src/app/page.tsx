@@ -57,11 +57,12 @@ export default async function Home() {
           <p className="mt-6 text-base text-primary-grey">
             {he.decode(content.intro)}
           </p>
-          <div className="mt-6 flex gap-2">
+          <ul className="mt-6 flex gap-4 list-none">
             {settings.socials.map((social) => (
               <SocialLink 
                 key={social.name} 
                 aria-label={`Follow on ${social.name}`} 
+                target="_blank"
                 href={social.url} 
                 icon={InstagramIcon} 
               />
@@ -69,10 +70,11 @@ export default async function Home() {
             <SocialLink
               key="email"
               aria-label={`Email me at ${settings.email}`}
+              target="_blank"
               href={`mailto:${settings.email}`}
               icon={MailIcon}
             />
-          </div>
+          </ul>
         </div>
       </Container>
       <Photos />
