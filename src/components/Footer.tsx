@@ -25,17 +25,17 @@ export function Footer() {
   return (
     <footer className="mt-32 flex-none">
       <ContainerOuter>
-        <div className="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
+        <div className="border-t border-grey-100 pt-10 pb-16">
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-              <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+              <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-primary-grey">
                 {menu.menuLinks.map((link) => (
                   <NavLink key={link.linkText} href={link.linkHref}>
                     {he.decode(link.linkText)}
                   </NavLink>
                 ))}
               </div>
-              <p className="text-sm text-zinc-400 dark:text-zinc-500">
+              <p className="text-sm text-grey-600">
                 &copy; {new Date().getFullYear()} Rising Hope Doula. All rights
                 reserved.
               </p>
