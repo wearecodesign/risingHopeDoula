@@ -68,6 +68,7 @@ export default async function Home() {
             ))}
             <SocialLink
               key="email"
+              aria-label={`Email me at ${settings.email}`}
               href={`mailto:${settings.email}`}
               icon={MailIcon}
             />
