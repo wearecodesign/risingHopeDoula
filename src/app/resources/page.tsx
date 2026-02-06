@@ -24,14 +24,16 @@ function Resource({
   title,
   href,
   children,
+  target,
 }: {
   title: string
   href?: string
   children: React.ReactNode
+  target?: string
 }) {
   return (
     <Card as="li">
-      <Card.Title as="h3" href={href}>
+      <Card.Title as="h3" href={href} target={target}>
         {title}
       </Card.Title>
       <Card.Description>{children}</Card.Description>
@@ -53,7 +55,7 @@ export default function Resources() {
         {categories.map((category) => (
           <ResourceSection key={category} title={category}>
             {content.resources.filter((resource) => resource.category === category).map((resource) => (
-              <Resource key={resource.title} title={resource.title} href={resource.href ?? undefined}>
+              <Resource key={resource.title} title={resource.title} href={resource.href ?? undefined} target="_blank">
                 {he.decode(resource.description)}
               </Resource>
             ))}
