@@ -5,7 +5,7 @@ import he from 'he';
 
 import { Container } from '@/components/Container'
 import { InstagramIcon, MailIcon } from '@/components/SocialIcons'
-import portraitImage from '~/images/portrait.jpg'
+import portraitImage from '~/images/photos/about/image-1.jpg'
 import { SocialLink } from '@/components/SocialLink';
 
 import settings from '../../../content/settings.json';

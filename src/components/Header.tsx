@@ -16,7 +16,7 @@ import he from 'he';
 import menu from '../../content/menu.json';
 
 import { Container } from '@/components/Container'
-import avatarImage from '~/images/avatar.jpg'
+import logoImage from '~/images/logos/logo.png'
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -236,8 +236,8 @@ function Avatar({
       {...props}
     >
       <Image
-        src={avatarImage}
-        alt=""
+        src={logoImage}
+        alt="Rising Hope Doula Logo"
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
