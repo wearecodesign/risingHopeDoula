@@ -1,5 +1,5 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
+import Image from 'next-export-optimize-images/image'
 import parse from 'html-react-parser';
 import he from 'he';
 
