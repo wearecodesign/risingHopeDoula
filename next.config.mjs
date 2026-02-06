@@ -1,7 +1,6 @@
 import rehypePrism from '@mapbox/rehype-prism'
 import nextMDX from '@next/mdx'
 import remarkGfm from 'remark-gfm'
-import withExportImages from 'next-export-optimize-images'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,6 +10,9 @@ const nextConfig = {
   assetPrefix: process.env.GITHUB_REPOSITORY
     ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/`
     : '',
+  images: {
+    unoptimized: true,
+  },
   trailingSlash: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
 }
@@ -23,4 +25,4 @@ const withMDX = nextMDX({
   },
 })
 
-export default withExportImages(withMDX(nextConfig))
+export default withMDX(nextConfig)

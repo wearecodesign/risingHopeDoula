@@ -1,4 +1,4 @@
-import Image from 'next-export-optimize-images/image'
+import Image from 'next/image'
 import { type ImageProps } from 'next/image'
 import { type MDXComponents } from 'mdx/types'
 

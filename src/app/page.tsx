@@ -1,4 +1,4 @@
-import Image from 'next-export-optimize-images/image'
+import Image from 'next/image'
 import clsx from 'clsx'
 import he from 'he';
 
