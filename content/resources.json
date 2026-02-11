@@ -76,6 +76,12 @@
       "title": "Infant Feeding Resources",
       "description": "Whether you&apos;re breastfeeding, pumping, formula feeding, or combo-feeding—I support your choices and can connect you with additional lactation specialists if needed.",
       "category": "Postpartum Essentials"
+    },
+    {
+      "title": "KellyMom",
+      "description": "Evidence-based breastfeeding and parenting resources. A trusted source for infant feeding questions.",
+      "category": "Online Resources",
+      "href": "https://kellymom.com"
     }
   ]
 }
