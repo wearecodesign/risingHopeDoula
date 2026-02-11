@@ -7,9 +7,10 @@
   "intro": "I've gathered some of my favorite books, websites, and local resources to support you during pregnancy, birth, and beyond.",
   "resources": [
     {
-      "title": "Ina May's Guide to Childbirth by Ina May Gaskin",
-      "description": "A classic that empowers birthing people with positive birth stories and practical wisdom. Great for building confidence in your body&apos;s ability to birth.",
-      "category": "Books I Recommend"
+      "title": "Birth Vibes: Stories and Strategies for an Empowered Birth",
+      "description": "A book especially for any of my friends birthing in a hospital setting, Jen will echo much of what we will talk about in prenatal meetings; how to adapt to changes in birth plans no matter what may happen",
+      "category": "Books I Recommend",
+      "href": "https://www.amazon.com/Birth-Vibes-Stories-Strategies-Empowered/dp/1538771470/ref=sr_1_1?adgrpid=1333710160996291&dib=eyJ2IjoiMSJ9.ZXUUFZRDsv-xxige4wmqdYASAI8GuSJ-dsIcHTEHvMKaEKEq6c7xGY3yvGY2c3S7.0NVmL1A4RuCsYjg52qfFqdI88v4-teU0SZsvZtDOAWo&dib_tag=se&hvadid=83357168535363&hvbmt=be&hvdev=c&hvlocphy=82395&hvnetw=o&hvqmt=e&hvtargid=kwd-83358089486864%3Aloc-190&hydadcr=11681_13581852&keywords=jen+hamilton+birth+vibes&mcid=439715b17487330380013a4e0727d24e&msclkid=c326a5c0566d19f57b60cc4cb069c222&qid=1770841608&sr=8-1"
     },
     {
       "title": "The Fourth Trimester by Kimberly Ann Johnson",
@@ -19,11 +20,6 @@
     {
       "title": "Nurture by Erica Chidi",
       "description": "A modern guide to pregnancy, birth, and the first weeks with baby. Beautifully designed with evidence-based information presented in an accessible way.",
-      "category": "Books I Recommend"
-    },
-    {
-      "title": "The Birth Partner by Penny Simkin",
-      "description": "The definitive guide for anyone supporting a birthing person. Perfect for partners, family members, and doulas.",
       "category": "Books I Recommend"
     },
     {
@@ -74,7 +70,7 @@
       "title": "Signs of Perinatal Mood Disorders",
       "description": "Baby blues are common, but persistent symptoms need attention. Anxiety, depression, intrusive thoughts, and rage can all be signs that you need support.",
       "category": "Postpartum Essentials",
-      "href": "https://postpartum.net"
+      "href": "https://postpartum.net/perinatal-mental-health/"
     },
     {
       "title": "Infant Feeding Resources",
