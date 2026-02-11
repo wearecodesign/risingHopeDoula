@@ -1,5 +1,4 @@
 import { type Metadata } from 'next'
-import parse from 'html-react-parser';
 import he from 'he';
 
 import { Card } from '@/components/Card'
@@ -41,17 +40,19 @@ export default function Services() {
             </h2>
             <Card.Description>{service.description}</Card.Description>
             <div className="mt-4">
-              <h3 className="text-sm font-medium text-primary-wine">
-                What&apos;s included:
-              </h3>
-              <ul className="mt-2 space-y-1 text-sm text-primary-grey">
-                {service.includes.map((item) => (
-                  <li key={item} className="flex items-start">
-                    <span className="mr-2 text-primary-wine">•</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              {service.includes && service.includes.length > 0 && (<ul className="mt-2 space-y-1 text-sm text-primary-grey">
+                <h3 className="text-sm font-medium text-primary-wine">
+                  What&apos;s included:
+                </h3>
+                
+                  {service.includes.map((item) => (
+                    <li key={item} className="flex items-start">
+                      <span className="mr-2 text-primary-wine">•</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </Card>
         ))}
