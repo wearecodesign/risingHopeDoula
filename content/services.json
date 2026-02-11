@@ -1,7 +1,7 @@
 {
   "metaData": {
     "title": "Services",
-    "description": "Doula services including birth support, postpartum care, and prenatal education."
+    "description": "Doula services including birth support, lactation services, and postpartum care."
   },
   "headline": "Services to support your unique journey.",
   "intro": "Every family's needs are different. I offer flexible packages designed to meet you where you are—whether you need comprehensive birth support, postpartum care, or guidance preparing for your new arrival.",
@@ -15,7 +15,21 @@
         "Continuous labor and birth support",
         "Comfort measures and positioning guidance",
         "Partner support and involvement",
+        "Early breastfeeding support",
         "One postpartum visit"
+      ]
+    },
+    {
+      "name": "Lactation Support",
+      "description": "As a Certified Lactation Counselor (CLC), I provide trained, evidence-based feeding support to help families navigate breastfeeding and newborn feeding with confidence. I offer practical guidance, hands-on strategies, and compassionate encouragement tailored to your goals.",
+      "includes": [
+        "Latch and positioning guidance ",
+        "Comfort techniques and positions",
+        "Pumping and bottle-feeding plans",
+        "Milk supply questions",
+        "Common feeding questions",
+        "Returning to work feeding strategies",
+        "Ongoing reassurance and troubleshooting"
       ]
     },
     {
@@ -28,18 +42,6 @@
         "Meal preparation",
         "Sibling care assistance",
         "Emotional support and resources"
-      ]
-    },
-    {
-      "name": "Prenatal Education",
-      "description": "Personalized childbirth education sessions tailored to your needs and preferences. Learn about the stages of labor, comfort measures, medical interventions, and how to advocate for yourself.",
-      "includes": [
-        "Understanding labor and birth",
-        "Comfort techniques and positions",
-        "Birth preferences planning",
-        "Partner preparation",
-        "Newborn care basics",
-        "Postpartum planning"
       ]
     },
     {
