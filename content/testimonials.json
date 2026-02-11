@@ -1,46 +1,35 @@
 {
   "metaData": {
     "title": "Testimonials",
-    "description": "Hear from families I've had the honor of supporting through pregnancy, birth, and postpartum."
+    "description": "Hear from families I've had the honor of supporting on their journeys "
   },
   "headline": "Stories from families I've had the honor of supporting.",
   "intro": "Every birth story is unique, and it's a privilege to be part of such transformative moments. Here's what some families have shared about their experience.",
   "testimonials": [
     {
-      "quote": "Having our doula by our side was the best decision we made for our birth. She helped us navigate unexpected changes with grace and made sure our voices were heard. We felt supported every step of the way.",
-      "author": "Sarah & Michael",
-      "context": "First-time parents, hospital birth",
-      "category": "Birth Support"
+      "quote": "Amber was an amazing doula with skills that helped me during my labor. I highly recommend her! \n",
+      "author": "Maya",
+      "context": "Unmedicated hospital birth"
     },
     {
-      "quote": "I was nervous about giving birth, especially as a first-time mom. Our doula's calm presence and constant encouragement gave me the confidence I needed. She helped my partner know exactly how to support me.",
-      "author": "Jennifer",
-      "context": "Unmedicated birth",
-      "category": "Birth Support"
+      "quote": "Absolutely loved Amber and would hire her again and again!! She truly made our birth experience so wonderful in that she was attentive to every need and she helped us to stick to our original birth plan that we had discussed weeks before the delivery. You are missing out if you don't use Amber for your next birth!",
+      "author": "Lauren",
+      "context": "Birth Center Birth"
     },
     {
-      "quote": "After a difficult first birth experience, I was anxious about my second. Our doula helped me process my fears and create a birth plan that honored my needs. This time, I felt empowered and in control.",
-      "author": "Maria",
-      "context": "VBAC birth",
-      "category": "Birth Support"
+      "quote": "Amber was amazing from the beginning to the end! From the planning stages until after delivery, I am so blessed to have had Amber by my side. She prayed over me during delivery which helped me remain calm and focused. She helped me hold my twins since I wasn’t able to do it by myself during delivery. She took pictures of the birth and the twins first hour while I was still being stitched up. She checked in on me and the twins frequently even months after delivery. She’s been a blessing to know and I am forever grateful for her.",
+      "author": "Jesse",
+      "context": "Hospital Birth"
     },
     {
-      "quote": "The postpartum period was harder than I expected. Having someone come in who actually understood what I was going through was invaluable. She helped me rest, fed my toddler, and reminded me that it's okay to ask for help.",
-      "author": "Amanda",
-      "context": "Second-time mom, postpartum support",
-      "category": "Postpartum Care"
+      "quote": "Amber answered EVERY question I asked, and was responsive to all of my concerns, weird feelings, etc. She is a wealth of information, and provided reputable documented sources so I felt confident in my choices. I would not have been as comfortable during my labor had she not been there to suggest labor positions and coach my husband on how to ease my pain and discomfort. Her positive energy and support as I made difficult choices during my labor that were not \"part of my plan\" really made all the difference in the world. I would recommend Amber to absolutely everyone, for pregnancy, postpartum and beyond. ",
+      "author": "J.M.",
+      "context": "First time mom, hospital birth"
     },
     {
-      "quote": "Overnight postpartum support saved my sanity. Knowing someone was there to care for the baby so I could sleep was life-changing. I woke up feeling human again.",
-      "author": "David & Lisa",
-      "context": "Twins, overnight care",
-      "category": "Postpartum Care"
-    },
-    {
-      "quote": "The childbirth education sessions were exactly what we needed. Everything was explained clearly, and we felt so much more prepared walking into the hospital. I actually looked forward to labor!",
-      "author": "Nicole & James",
-      "context": "First-time parents",
-      "category": "Prenatal Education"
+      "quote": "10 / 10 would recommend Amber again!",
+      "author": "C.S.",
+      "context": "Homebirth, VBAC"
     }
   ]
 }
