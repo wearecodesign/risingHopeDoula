@@ -28,11 +28,11 @@ export default function Services() {
     >
       <ul
         role="list"
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2"
+        className="grid grid-cols-1 gap-x-12 gap-y-8 sm:grid-cols-2"
       >
         {content.services.map((service) => (
           <Card as="li" key={service.name}>
-            <h2 className="mt-6 text-base font-semibold text-primary-wine">
+            <h2 className="text-base font-semibold text-primary-wine">
               {service.name}
             </h2>
             <Card.Description>{service.description}</Card.Description>
