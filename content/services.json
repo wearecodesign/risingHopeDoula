@@ -45,15 +45,14 @@
       ]
     },
     {
-      "name": "Virtual Support Package",
-      "description": "For families who prefer remote support or are outside my service area. Includes video calls, text support, and resources to help you feel prepared and supported throughout your journey.",
+      "name": "Personalized Support Packages",
+      "description": "Not seeing a package that fits? You can build your own plan by selecting only the services you want — from prenatal visits to lactation support and postpartum care. ",
       "includes": [
-        "Video prenatal consultations",
-        "Birth preferences review",
-        "On-call text/video support during labor",
-        "Postpartum check-in calls",
-        "Curated resource library access",
-        "Email support throughout pregnancy"
+        "Creating birth preferences",
+        "Birth attendance ",
+        "In-home lactation consultations",
+        "Postpartum check-ins",
+        "And more!"
       ]
     }
   ]
